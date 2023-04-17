@@ -1,18 +1,13 @@
 import type { App } from 'vue'
 import type { RouteRecordRaw } from 'vue-router'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '~/pages/home/index.vue'
+import Home from '~/pages/generator/index.vue'
 
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'Home',
     component: Home,
-  },
-  {
-    path: '/markdown',
-    name: 'Markdown',
-    component: () => import('~/pages/markdown/index.md'),
   },
 ]
 
