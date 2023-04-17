@@ -99,7 +99,7 @@ const changeMode = (m: sourceMode) => {
       咒语生成器
     </div>
     <main class="flex mt-4">
-      <div class="w-[1080px] rounded-xl border-2 border-#202022 overflow-hidden" style="box-shadow: rgba(255, 255, 255, 0.08) 0px 1px 4px, rgba(255, 255, 255, 0.08) 0px 0px 16px;">
+      <div class="w-[1080px] min-h-[464px] rounded-xl border-2 border-#202022 overflow-hidden" style="box-shadow: rgba(255, 255, 255, 0.08) 0px 1px 4px, rgba(255, 255, 255, 0.08) 0px 0px 16px;">
         <div class="tag-tabs flex justify-around bg-#24262e">
           <div v-for="(c, index) in configList" :key="c.name" :class="actived === index ? `bg-#141416` : ''" class="relative py-12px px-30px text-14px text-#beb5c4 cursor-pointer" @click="changeTab(index)">
             {{ c.name }}
