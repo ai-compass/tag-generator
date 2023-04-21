@@ -26,7 +26,7 @@ const getInput = () => {
   const zh_quality = '超高清，准确，质感皮肤，非常详细，高细节，屡获殊荣，最佳质量，高质量，8K'
   const quality = zhOrEn.value === 'en' ? `,${en_quality}` : `，${zh_quality}`
   let text = ''
-  text = selectList.join(zhOrEn.value === 'en' ? ',' : '，')
+  text = selectList.join(zhOrEn.value === 'en' ? ', ' : '，')
   if (text && mode.value === 'goddess')
     text += quality
   input.value = text
